@@ -11,7 +11,7 @@ public class NoSnowLayerOnGlass implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onSnowLayerFormation(org.bukkit.event.block.BlockFormEvent event) {
-        if (event.getNewState().getType() != org.bukkit.Material.SNOW) {
+        if (event.getNewState().getType() != Material.SNOW) {
             return;
         }
 

@@ -8,7 +8,7 @@ import org.bukkit.event.Listener;
 public class NoSnowLayerAboveLava implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onSnowLayerFormation(org.bukkit.event.block.BlockFormEvent event) {
-        if (event.getNewState().getType() != org.bukkit.Material.SNOW) {
+        if (event.getNewState().getType() != Material.SNOW) {
             return;
         }
 
