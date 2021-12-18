@@ -1,0 +1,8 @@
+name: CreativeTweaks
+description: Adjustments to Minecraft behavior
+author: Matthew_Cash
+website: matthew-cash.com
+prefix: CreativeTweaks
+version: 1.0.0
+api-version: 1.18
+main: com.matthewcash.creativetweaks.CreativeTweaks
