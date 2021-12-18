@@ -24,11 +24,11 @@ public class CreativeTweaks extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new NoSnowLayerAboveLava(), this);
         Bukkit.getPluginManager().registerEvents(new NoSnowLayerOnGlass(), this);
 
-        getLogger().info("Enabled ServerHub!");
+        getLogger().info("Enabled CreativeTweaks!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("Disabled ServerHub!");
+        getLogger().info("Disabled CreativeTweaks!");
     }
 }
