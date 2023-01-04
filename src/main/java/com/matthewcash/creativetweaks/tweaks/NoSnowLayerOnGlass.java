@@ -6,11 +6,12 @@ import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockFormEvent;
 
 public class NoSnowLayerOnGlass implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
-    public void onSnowLayerFormation(org.bukkit.event.block.BlockFormEvent event) {
+    public void onSnowLayerFormation(BlockFormEvent event) {
         if (event.getNewState().getType() != Material.SNOW) {
             return;
         }
