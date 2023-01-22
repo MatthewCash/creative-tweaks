@@ -6,3 +6,8 @@ prefix: CreativeTweaks
 version: 1.0.0
 api-version: 1.18
 main: com.matthewcash.creativetweaks.CreativeTweaks
+
+commands:
+    fixsnow:
+        description: Fix snow layers
+        usage: /fixsnow
