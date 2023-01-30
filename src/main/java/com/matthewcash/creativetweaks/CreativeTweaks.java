@@ -1,6 +1,7 @@
 package com.matthewcash.creativetweaks;
 
 import com.matthewcash.creativetweaks.commands.FixSnow;
+import com.matthewcash.creativetweaks.tweaks.NoDamage;
 import com.matthewcash.creativetweaks.tweaks.NoIceFormation;
 import com.matthewcash.creativetweaks.tweaks.NoSnowGolemDamage;
 import com.matthewcash.creativetweaks.tweaks.NoSnowLayerAboveLava;
@@ -20,6 +21,7 @@ public class CreativeTweaks extends JavaPlugin {
     public void onEnable() {
         plugin = this;
 
+        Bukkit.getPluginManager().registerEvents(new NoDamage(), this);
         Bukkit.getPluginManager().registerEvents(new NoIceFormation(), this);
         Bukkit.getPluginManager().registerEvents(new NoSnowGolemDamage(), this);
         Bukkit.getPluginManager().registerEvents(new NoSnowLayerAboveLava(), this);
