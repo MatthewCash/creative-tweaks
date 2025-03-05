@@ -22,8 +22,12 @@ public class CreativeTweaks extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new NoDamage(), this);
         Bukkit.getPluginManager().registerEvents(new NoIceFormation(), this);
-        Bukkit.getPluginManager().registerEvents(new NoSnowLayerAboveLava(), this);
-        Bukkit.getPluginManager().registerEvents(new NoSnowLayerOnGlass(), this);
+        Bukkit.getPluginManager()
+            .registerEvents(new NoSnowLayerAboveLava(), this);
+        Bukkit.getPluginManager()
+            .registerEvents(new NoSnowLayerOnGlass(), this);
+        Bukkit.getPluginManager()
+            .registerEvents(new NoSkeletonTraps(), this);
 
         Bukkit.getPluginCommand("fixsnow").setExecutor(new FixSnow());
 

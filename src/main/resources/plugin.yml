@@ -4,10 +4,14 @@ author: Matthew_Cash
 website: matthew-cash.com
 prefix: CreativeTweaks
 version: 1.0.0
-api-version: 1.18
+api-version: 1.17
+load: STARTUP
 main: com.matthewcash.creativetweaks.CreativeTweaks
 
 commands:
     fixsnow:
         description: Fix snow layers
         usage: /fixsnow
+    fixheightmap:
+        description: Fix heightmap
+        usage: /fixheightmap
